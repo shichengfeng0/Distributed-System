@@ -1,0 +1,4 @@
+IncreaseViewNum called *** New view, Primary: /var/tmp/824-501/pb-29880-basic-1, Backup is 
+Returning viewview# 1, primary: /var/tmp/824-501/pb-29880-basic-1, backup: . 
+ACKED = False && PRIMARY -> Current view: view# 1, primary: /var/tmp/824-501/pb-29880-basic-1, backup: .  is acked by primary/var/tmp/824-501/pb-29880-basic-1
+Returning viewview# 1, primary: /var/tmp/824-501/pb-29880-basic-1, backup: . 
