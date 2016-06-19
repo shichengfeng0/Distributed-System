@@ -60,7 +60,7 @@ type KVPaxos struct {
 }
 
 func (kv *KVPaxos) Get(args *GetArgs, reply *GetReply) error {
-	#three
+	
 	kv.mu.Lock()
 	defer kv.mu.Unlock(); kv.clearMemory()
 
@@ -167,7 +167,7 @@ func (kv *KVPaxos) Get(args *GetArgs, reply *GetReply) error {
 }
 
 func (kv *KVPaxos) Put(args *PutArgs, reply *PutReply) error {
-	#three
+	
 	kv.mu.Lock()
 	defer kv.mu.Unlock(); kv.clearMemory()
 

@@ -404,7 +404,7 @@ func (kv *DisKV) Get(args *GetArgs, reply *GetReply) error {
 
 // RPC handler for client Put and Append requests
 func (kv *DisKV) PutAppend(args *PutAppendArgs, reply *PutAppendReply) error {
-	#three
+	
 	kv.mu.Lock()
 	defer kv.mu.Unlock()
 
@@ -427,7 +427,7 @@ func (kv *DisKV) PutAppend(args *PutAppendArgs, reply *PutAppendReply) error {
 // if so, re-configure.
 //
 func (kv *DisKV) tick() {
-	#three
+	
 	kv.mu.Lock()
 	defer kv.mu.Unlock()
 

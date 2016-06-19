@@ -61,7 +61,7 @@ func convertView(view View) string {
 // server Ping RPC handler.
 //
 func (vs *ViewServer) Ping(args *PingArgs, reply *PingReply) error {
-	#three
+	
 	vs.viewMu.Lock()
 
 	if vs.getViewNum() == 0 {
@@ -208,7 +208,7 @@ func (vs *ViewServer) Ping(args *PingArgs, reply *PingReply) error {
 // server Get() RPC handler.
 //
 func (vs *ViewServer) Get(args *GetArgs, reply *GetReply) error {
-	#three
+	
 	vs.viewMu.Lock()
 	reply.View = vs.currentView
 	vs.viewMu.Unlock()
@@ -220,7 +220,7 @@ func (vs *ViewServer) Get(args *GetArgs, reply *GetReply) error {
 // if servers have died or recovered, and change the view
 // accordingly.
 func (vs *ViewServer) tick() {
-	#three
+	
 	vs.viewMu.Lock()
 
 	// Primary !== ""

@@ -83,7 +83,7 @@ func (ck *Clerk) Lock(lockname string) bool {
 
 func (ck *Clerk) Unlock(lockname string) bool {
 
-	#three
+	
 
 	return false
 }

@@ -97,7 +97,7 @@ func call(srv string, name string, args interface{}, reply interface{}) bool {
 // is reached.
 //
 func (px *Paxos) Start(seq int, v interface{}) {
-	#three
+	
 
 	if px.dead {
 		return

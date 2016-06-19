@@ -82,7 +82,7 @@ func (sm *ShardMaster) doOperation(op Op) {
 }
 
 func (sm *ShardMaster) Join(args *JoinArgs, reply *JoinReply) error {
-	#three
+	
 	sm.mu.Lock()
 	defer sm.mu.Unlock()
 
@@ -113,7 +113,7 @@ func (sm *ShardMaster) Leave(args *LeaveArgs, reply *LeaveReply) error {
 }
 
 func (sm *ShardMaster) Move(args *MoveArgs, reply *MoveReply) error {
-	#three
+	
 	sm.mu.Lock()
 	defer sm.mu.Unlock()
 
@@ -128,7 +128,7 @@ func (sm *ShardMaster) Move(args *MoveArgs, reply *MoveReply) error {
 }
 
 func (sm *ShardMaster) Query(args *QueryArgs, reply *QueryReply) error {
-	#three
+	
 	sm.mu.Lock()
 	defer sm.mu.Unlock()
 

@@ -66,7 +66,7 @@ type ShardKV struct {
 }
 
 func (kv *ShardKV) Get(args *GetArgs, reply *GetReply) error {
-	#three
+	
 	kv.mu.Lock()
 	defer kv.mu.Unlock()
 
@@ -85,7 +85,7 @@ func (kv *ShardKV) Get(args *GetArgs, reply *GetReply) error {
 }
 
 func (kv *ShardKV) Put(args *PutArgs, reply *PutReply) error {
-	#three
+	
 	kv.mu.Lock()
 	defer kv.mu.Unlock()
 
